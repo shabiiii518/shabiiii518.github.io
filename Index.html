@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Echo Blaze — Business Services</title>
+  <meta name="description" content="Echo Blaze — Professional and reliable business services.">
+  <style>
+    :root{--max:1100px;--accent:#f97316;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;color:#0f172a;background:#f8fafc}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .logo{font-weight:800;font-size:18px}
+    nav a{margin-left:16px;text-decoration:none;color:inherit;font-weight:600}
+    .hero{display:grid;gap:18px;padding:28px 0;align-items:center}
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .lead{font-size:24px;margin:8px 0 14px}
+    .sub{color:var(--muted)}
+    .cta{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+    .testi{background:#fff;padding:14px;border-radius:10px;box-shadow:0 8px 24px rgba(12,20,30,0.04)}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;background:#fff}
+    button{padding:10px 16px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700}
+    footer{padding:18px 0;color:var(--muted);font-size:14px;margin-top:20px}
+    @media(min-width:880px){
+      .hero-grid{grid-template-columns:1fr 420px;align-items:center}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Echo Blaze</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>Welcome to Echo Blaze</h1>
+          <p class="lead">We provide powerful business solutions designed to help you grow faster and smarter.</p>
+          <p class="sub">Professional • Reliable • High-Quality Service</p>
+
+          <p style="margin-top:18px">
+            <a class="cta" href="#contact">Get Started</a>
+          </p>
+
+          <div class="services" id="services" style="margin-top:20px">
+            <div class="card">
+              <h3>Marketing Solutions</h3>
+              <p class="sub">Boost your brand visibility and reach new audiences.</p>
+            </div>
+            <div class="card">
+              <h3>Business Strategy</h3>
+              <p class="sub">Smart planning for growth and long-term success.</p>
+            </div>
+            <div class="card">
+              <h3>Technical Support</h3>
+              <p class="sub">Fast and reliable support for your business tools.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="text-align:center;padding:28px">
+          <h3>Your Success, Our Mission</h3>
+          <p class="sub">Echo Blaze delivers innovation and performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="card">
+        <h3>About Echo Blaze</h3>
+        <p class="sub">
+          Echo Blaze is a modern business solutions company offering digital marketing, strategy development,
+          and technical support. Our team is dedicated to helping businesses grow with smart, effective solutions.
+        </p>
+      </div>
+
+      <h3 style="margin-top:18px">Client Reviews</h3>
+      <div style="display:grid;gap:12px;margin-top:10px">
+        <div class="testi">
+          <strong>Ali R.</strong> — “Echo Blaze helped our business grow in just weeks. Amazing service!”
+        </div>
+        <div class="testi">
+          <strong>Sana K.</strong> — “Professional, fast, and highly reliable. Highly recommend Echo Blaze.”
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h3>Contact Echo Blaze</h3>
+        <p class="sub">Feel free to reach out for business inquiries or support.</p>
+
+        <form class="contact-form" action="mailto:echo@echoblaze.com" method="post" enctype="text/plain">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <textarea name="Message" rows="4" placeholder="Your message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="yr"></span> Echo Blaze — All Rights Reserved
+    </footer>
+  </div>
+
+  <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+          </html>
